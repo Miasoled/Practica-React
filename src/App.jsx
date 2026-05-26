@@ -8,9 +8,12 @@
     const [contar, setContar] = useState(0);
     return (
       <>
-        <Card edad={21}></Card>
-        <Card edad={17}></Card>
-        <Card edad={15}></Card>
+        <UserCard 
+        nombre = "Lisseth"
+        edad={21}
+        url= "https://www.reprodart.com/kunst/vincent_van_gogh/thm_Cafeterrasse-bei-Nacht.jpg"
+        activo={true}
+        ></UserCard>
       </>
     );
   }

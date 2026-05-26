@@ -8,26 +8,44 @@ usuario (“Usuario activo” o “Usuario inactivo”) mediante operador ternar
 */
 
 import PropTypes from "prop-types";
-import "./UserCard.css"
+import "./UserCard.css";
+import { useState } from "react";
 
-export const UserCard = ({nombre,url, edad,activo=true}) => {
-    return(
+export const UserCard = ({ nombre, url, edad, activo = true }) => {
 
-        <div className="usu">
+  const [mostrar, setMostrar] = useState(true);
+
+  return (
+    <div className="usu">
+      {
+        mostrar ? (
+          <div>
             <h1>El nombre del usuario es {nombre}</h1>
-            <img src={url} alt="" />
-             <p>Edad: {edad}</p>
-            <p>
-                {activo ? "Usuario activo" : "Usuario inactivo"}
-            </p>
-        </div>
-    )
 
-}
+            <img src={url} alt={nombre} />
+
+            {edad && <p>Edad: {edad}</p>}
+
+            <p>
+              {activo ? "Usuario activo" : "Usuario inactivo"}
+            </p>
+          </div>
+        ) : (
+          <h2>Usuario oculto</h2>
+        )
+      }
+
+      <button onClick={() => setMostrar(!mostrar)}>
+        {mostrar ? "Ocultar usuario" : "Mostrar usuario"}
+      </button>
+
+    </div>
+  );
+};
 
 UserCard.propTypes = {
-    nombre: PropTypes.string.isRequired,
-    url: PropTypes.string.isRequired,
-    edad: PropTypes.number.isRequired,
-    activo: PropTypes.bool  
-}
+  nombre: PropTypes.string.isRequired,
+  url: PropTypes.string.isRequired,
+  edad: PropTypes.number,
+  activo: PropTypes.bool,
+};
