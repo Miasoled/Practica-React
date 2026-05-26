@@ -10,7 +10,7 @@ export const Card = ({nombre = "lisseth",edad}) => {
         <div>
             <h1>{nombre} y {edad>=18 ? 'es mayor de edad' : 'no en mayor de edad'}</h1>
             <h2>{mostrarEdad? edad : 'edad oculta' }</h2>
-            <button onClick={()=>{setMostrarEdad(!mostrarEdad)}}>Mostrar edad</button>
+            <button onClick={()=>{setMostrarEdad(!mostrarEdad)}}>{mostrarEdad? 'Ocultar Edad' : 'Mostrar Edad'}</button>
         </div>
 
     )
