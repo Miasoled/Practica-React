@@ -1,0 +1,25 @@
+h2{
+  text-align: center;
+}
+
+img {
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+p{
+  width: fit-content;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+button {
+  display: block;
+  margin: 0 auto;
+  gap: 10px;
+  border-color: blue;
+  border-radius: 5px;
+}

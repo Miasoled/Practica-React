@@ -1,0 +1,9 @@
+img {
+    border-radius: 25px;
+}
+
+.usu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
