@@ -1,0 +1,14 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: brown;
+    color: aliceblue;
+}
+
+.item-menu {
+    margin-left: 10px;
+    color: white;
+    text-decoration: none;
+}

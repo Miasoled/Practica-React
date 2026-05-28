@@ -1,0 +1,29 @@
+.contactos{
+    min-height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+
+.contactos-content{
+    max-width: 600px;
+}
+
+.contactos h1{
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+
+.contactos p{
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+.contactos-info{
+    margin-top: 25px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}

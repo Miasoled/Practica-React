@@ -1,0 +1,10 @@
+footer {
+    display: flex;
+    background-color: brown;
+    color: aliceblue;
+    text-align: center;
+    justify-content: center;
+    padding: 20px;
+    margin-top: auto;
+}
+

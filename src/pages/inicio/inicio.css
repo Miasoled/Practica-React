@@ -1,0 +1,38 @@
+.inicio{
+    min-height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+
+.inicio-content{
+    max-width: 600px;
+}
+
+.inicio h1{
+    font-size: 55px;
+    margin-bottom: 20px;
+}
+
+.inicio p{
+    font-size: 20px;
+    line-height: 1.6;
+    margin-bottom: 25px;
+}
+
+.inicio button{
+    padding: 12px 25px;
+    border: none;
+    border-radius: 8px;
+    background: #b22222;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.inicio button:hover{
+    background: #8f1b1b;
+}
